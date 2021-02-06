@@ -1,6 +1,5 @@
 use std::f64;
-
-type Function1 = dyn Fn(f64) -> f64;
+use crate::algebra::Function1;
 
 fn derivative(f: &Function1, x: f64) -> f64 {
   let h = 1.0 / (10.0 as f64).powf(8.0);
